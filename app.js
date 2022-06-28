@@ -1,44 +1,30 @@
-// method chaining
-
-function a(){
-  return  function b(){
-    console.log("This is from b");
-}
-}
-let hi = a()
-hi()
-
-function x(a){
-   return function y(b){
-      return a+b
-    }
-}
-let sum = x(4)(7)
-console.log(sum);
-
-var stu = [{name : "revati", age : 25},
-{name : "rutuja", age: 26}, {name: "pranita", age: 20}
-]
-
-stu.map (i=>console.log(i.age))
+// string inbuilt function
+var str = "Revati is good girl, Rutuja is also good girl"
+var substring = str.split(",")
+console.log(substring);
  
+var substring2=str.substring(6,12)
+console.log(substring2);
 
-console.log(stu);
-for(let i=0; i<stu.length; i++){
-    console.log(stu[i].name);
-}
+var newstr = str.concat(" shreyas is also good boy")
+console.log(newstr);
 
-var workers = [
-  {name : "satish", salary:15000, post:"manager"},
-    {name : "amol", salary:30000, post:"worker"},
-      {name : "prasad", salary:40000, post:"technician"},
-        {name : "sejal", salary:25000, post:"repairman"},
- ]
-workers.map (i=>console.log(i.salary , i.name))
-console.log(workers);
-for (let i = 0; i<workers.length; i++) {
-console.log(workers[i].name);
-  }
+var substring3= str.includes("Revati")
+console.log(substring3);
 
-  
+var substring3= str.includes("uuu")
+console.log(substring3);
 
+// var let const
+var x = "revati"
+console.log(x);
+var x = "rutuja"
+console.log(x);
+
+let a = 2
+a = 3
+console.log(a);
+
+const s= "pranita"
+console.log(s);
+s = "shreyas"
